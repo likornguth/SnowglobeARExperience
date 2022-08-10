@@ -1,0 +1,64 @@
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<a-scene
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  xrweb="disableWorldTracking: true">
+
+  <a-assets>
+    <img id="field" src="./assets/treepano.jpeg">
+    <a-asset-item id="ballModel" src="assets/ball-center.glb"></a-asset-item>
+    <img id="posx" src="./assets/snowpano/px_4.png">
+    <img id="posy" src="./assets/snowpano/py_4.png">
+    <img id="posz" src="./assets/snowpano/pz_4.png">
+    <img id="negx" src="./assets/snowpano/nx_4.png">
+    <img id="negy" src="./assets/snowpano/ny_5.png">
+    <img id="negz" src="./assets/snowpano/nz_4.png">
+  </a-assets>
+  
+  <a-camera></a-camera>
+
+
+  <a-entity image-target-portal="name: snowglobe3" visible="true">
+
+    <a-entity 
+      position="0 2.25 -15" 
+      particle-system="preset: snow"
+      id="particlecomp"
+    ></a-entity>
+
+    <a-ring
+      id="portal"
+      radius-inner="0.001"
+      radius-outer="1000"
+      xrextras-hider-material
+    ></a-ring>
+    
+    <a-entity
+      id="ball"
+      position="-10 0 0"
+      gltf-model="#ballModel"
+      cubemap-static
+      rotation="90 0 0"
+      animation__spin="
+        property: rotation;
+        dur: 3000;
+        from: 90 0 0;
+        to: 90 360 0;
+        loop: true;
+        easing: linear;"
+      modify-materials>
+    </a-entity>
+    
+    <a-sky
+      rotation="0 90 0"
+      scale="0.015 0.015 -0.015"
+      src="#field"
+    ></a-sky>
+    
+  </a-entity>
+  
+  
+</a-scene>
