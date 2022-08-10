@@ -1,4 +1,4 @@
-# Snow Portal
+# Snowglobe AR Lens
 
 
 This is an Augmented Reality effect built using the A-Frame library
