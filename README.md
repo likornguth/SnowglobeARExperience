@@ -9,4 +9,6 @@ Project includes custom 3D object mesh textures, simple animation loop, particle
 
 
 Scan the image target
-![]([https://cdn.8thwall.com/web/img/readme/wall-1.jpg](https://github.com/likornguth/SnowglobeARExperience/blob/main/snowglobe3.jpg))
+![](https://github.com/likornguth/SnowglobeARExperience/blob/main/snowglobe3.jpg)
+
+![](https://github.com/likornguth/SnowglobeARExperience/blob/main/8code(14).png)
