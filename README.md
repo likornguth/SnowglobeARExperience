@@ -11,7 +11,7 @@ Project includes custom 3D object mesh textures, simple animation loop, particle
 
 first, scan this QR code:
 
-![](https://github.com/likornguth/SnowglobeARExperience/blob/main/8code%20(14).png)
+![](https://github.com/likornguth/SnowglobeARExperience/blob/main/2022%20Summer%20Intern%20Project_%20Holiday%20Campaign.png)
 
 then, scan the image target
 ![](https://github.com/likornguth/SnowglobeARExperience/blob/main/snowglobe3.jpg)
